@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h4>Įveskite iris gėlės duomenis:</h4>
+<form action="/" method="POST">
+  Sepal ilgis:<br>
+  <input type="text" name="sepal_length"><br>
+  Sepal plotis::<br>
+  <input type="text" name="sepal_width"><br>
+  Petal ilgis:<br>
+  <input type="text" name="petal_length"><br>
+  Petal plotis:<br>
+  <input type="text" name="petal_width"><br>
+  <input type="submit" name="Submit"/>
+</form>
+{% if prediction %}
+<h1>{{ prediction }}</h1>
+<img src="{{ image }}"/>
+{% endif %}
+</body>
+</html>
